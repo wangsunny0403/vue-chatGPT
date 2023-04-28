@@ -51,8 +51,6 @@ body {
 .user-box {
   background-color: #fff;
   border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 4px #e5e8ea;
 }
 
 .user-head {
@@ -88,16 +86,15 @@ body {
 
 .info-txt {
   margin-top: 20px;
-  padding: 20px;
   background-color: #FFFFFF;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px #E5E8EA;
 }
 
 .info-txt .title {
   font-weight: bold;
   font-size: 18px;
   color: #0D518D;
+  margin-top: 15px;
 }
 
 .info-txt .content {
@@ -113,8 +110,7 @@ body {
 .bmr-info {
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 2px 5px #E5E8EA;
-  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .bmr-info h2 {
