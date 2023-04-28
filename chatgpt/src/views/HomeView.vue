@@ -66,80 +66,61 @@
             TDEE 相等，便達到「熱量平衡」
           </p>
         </div>
-        <div class="bmr-box">
+        <section class="bmr-box">
           <div class="bmr-item">
             <div class="bmr-img">
-              <img src="https://via.placeholder.com/80x80" alt="no exercise" />
+              <img src="https://via.placeholder.com/80x80" alt="沒什麼運動量" />
             </div>
             <div class="bmr-body">
               <div class="bmr-txt">沒什麼運動量（幾乎不運動）</div>
-              <div class="bmr-count">
-                BMR x 1.2 = <b style="color: #0d518d">1542</b>
-              </div>
+              <div class="bmr-count">BMR x 1.2 = <b>1542</b></div>
             </div>
           </div>
           <div class="bmr-item">
             <div class="bmr-img">
-              <img
-                src="https://via.placeholder.com/80x80"
-                alt="light exercise"
-              />
+              <img src="https://via.placeholder.com/80x80" alt="輕量活動量" />
             </div>
             <div class="bmr-body">
               <div class="bmr-txt">輕量活動量（每週運動 1-3 天）</div>
-              <div class="bmr-count">
-                BMR x 1.375 = <b style="color: #0d518d">1766.88</b>
-              </div>
+              <div class="bmr-count">BMR x 1.375 = <b>1766.88</b></div>
             </div>
           </div>
           <div class="bmr-item">
             <div class="bmr-img">
-              <img
-                src="https://via.placeholder.com/80x80"
-                alt="moderate exercise"
-              />
+              <img src="https://via.placeholder.com/80x80" alt="中度活動量" />
             </div>
             <div class="bmr-body">
               <div class="bmr-txt">中度活動量（每週運動 3-5 天）</div>
-              <div class="bmr-count">
-                BMR x 1.55 = <b style="color: #0d518d">1991.75</b>
-              </div>
+              <div class="bmr-count">BMR x 1.55 = <b>1991.75</b></div>
             </div>
           </div>
           <div class="bmr-item">
             <div class="bmr-img">
-              <img
-                src="https://via.placeholder.com/80x80"
-                alt="high exercise"
-              />
+              <img src="https://via.placeholder.com/80x80" alt="高度活動量" />
             </div>
             <div class="bmr-body">
               <div class="bmr-txt">高度活動量（每週運動 6-7 天）</div>
-              <div class="bmr-count">
-                BMR x 1.725 = <b style="color: #0d518d">2210.2</b>
-              </div>
+              <div class="bmr-count">BMR x 1.725 = <b>2210.2</b></div>
             </div>
           </div>
           <div class="bmr-item">
             <div class="bmr-img">
               <img
                 src="https://via.placeholder.com/80x80"
-                alt="very high exercise"
+                alt="非常高度活動量"
               />
             </div>
             <div class="bmr-body">
               <div class="bmr-txt">非常高度活動量（一天訓練兩次）</div>
-              <div class="bmr-count">
-                BMR x 1.9 = <b style="color: #0d518d">2441.5</b>
-              </div>
+              <div class="bmr-count">BMR x 1.9 = <b>2441.5</b></div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
       <div class="section section3">
-        <section class="count-box">
-          <h2>還剩卡路里</h2>
-          <table>
+        <div class="count-box">
+          <h2 class="count-title">還剩卡路里</h2>
+          <table class="count-table">
             <thead>
               <tr>
                 <th>目標</th>
@@ -163,17 +144,17 @@
               </tr>
             </tbody>
           </table>
-        </section>
+        </div>
         <div class="input-box">
-          <select class="meal-select">
-            <option value="早餐">早餐</option>
-            <option value="午餐">午餐</option>
-            <option value="晚餐">晚餐</option>
-            <option value="點心/下午茶">點心/下午茶</option>
+          <select name="meal" id="meal-select">
+            <option value="breakfast">早餐</option>
+            <option value="lunch">午餐</option>
+            <option value="dinner">晚餐</option>
+            <option value="snack">點心/下午茶</option>
           </select>
-          <input type="text" class="food-input" placeholder="輸入餐點名稱" />
-          <input type="text" class="calorie-input" placeholder="輸入卡路里" />
-          <button class="add-btn">新增</button>
+          <input type="text" placeholder="輸入餐點名稱" />
+          <input type="number" placeholder="輸入卡路里" />
+          <button>新增</button>
         </div>
         <div class="meal-box">
           <table>
@@ -184,23 +165,23 @@
             </tr>
             <tr>
               <td>午餐</td>
-              <td>雞肉</td>
-              <td>250大卡</td>
+              <td>蔬菜沙拉</td>
+              <td>150大卡</td>
             </tr>
             <tr>
               <td>晚餐</td>
-              <td>牛肉</td>
-              <td>400大卡</td>
+              <td>燉牛肉</td>
+              <td>500大卡</td>
             </tr>
             <tr>
               <td>點心/下午茶</td>
-              <td>蘋果</td>
+              <td>水果沙拉</td>
               <td>100大卡</td>
             </tr>
             <tr>
               <td>晚餐</td>
-              <td>炸雞</td>
-              <td>600大卡</td>
+              <td>炒麵</td>
+              <td>450大卡</td>
             </tr>
           </table>
         </div>

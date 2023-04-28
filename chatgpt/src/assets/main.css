@@ -51,6 +51,8 @@ body {
 .user-box {
   background-color: #fff;
   border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px #e5e8ea;
 }
 
 .user-head {
@@ -86,8 +88,10 @@ body {
 
 .info-txt {
   margin-top: 20px;
+  padding: 20px;
   background-color: #FFFFFF;
   border-radius: 10px;
+  box-shadow: 0px 0px 10px #E5E8EA;
 }
 
 .info-txt .title {
@@ -106,11 +110,11 @@ body {
   background-color: #ffffff;
 }
 
-
-
 .bmr-info {
   background-color: #ffffff;
   border-radius: 10px;
+  box-shadow: 0 2px 5px #E5E8EA;
+  padding: 20px;
 }
 
 .bmr-info h2 {
@@ -124,137 +128,148 @@ body {
 }
 
 .bmr-box {
-  margin-top: 30px;
+  width: 100%;
 }
 
 .bmr-item {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
   width: 100%;
   border-bottom: 1px solid #DFE2E6;
+  padding: 10px 0;
 }
 
 .bmr-img {
   width: 80px;
+}
+
+.bmr-img img {
+  width: 100%;
+  height: auto;
+}
+
+.bmr-body {
+  width: calc(100% - 90px);
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.bmr-img {
+  flex: 0 0 80px;
   height: 80px;
   margin-right: 10px;
 }
 
 .bmr-txt {
-  font-size: 14px;
-  margin: 8px 0;
-}
-
-.bmr-count {
-  font-size: 14px;
-  margin: 8px 0;
+  font-size: 16px;
   color: #070707;
 }
 
+.bmr-count {
+  font-size: 16px;
+  color: #070707;
+}
+
+.bmr-count b {
+  color: #0D518D;
+}
 
 .section3 {
   background-color: #ffffff;
 }
 
 .count-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-}
-
-.count-box h2 {
-  font-size: 18px;
-  font-weight: bold;
-  color: #0D518D;
-}
-
-.count-box table {
-  margin-top: 20px;
-  border-collapse: collapse;
-}
-
-.count-box th {
-  font-size: 14px;
-  font-weight: normal;
-  color: #070707;
-  padding: 8px;
-  text-align: left;
-}
-
-.count-box td {
-  font-size: 14px;
-  font-weight: normal;
-  color: #070707;
-  padding: 8px;
+  margin: 0 auto;
+  max-width: 600px;
   text-align: center;
 }
 
-.count-box td:first-child {
-  font-weight: bold;
+.count-title {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
-.count-box td:nth-child(2),
-.count-box td:nth-child(4),
-.count-box td:nth-child(6) {
-  font-weight: bold;
+.count-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: center;
+}
+
+.count-table th,
+.count-table td {
+  padding: 10px;
+}
+
+.count-table th {
   color: #0D518D;
+  font-weight: bold;
 }
 
-.count-box td:nth-child(7) {
+.count-table td:nth-child(2),
+.count-table td:nth-child(4),
+.count-table td:nth-child(6) {
+  font-size: 20px;
+}
+
+.count-table td:nth-child(2),
+.count-table td:nth-child(4),
+.count-table td:nth-child(6),
+.count-table td:nth-child(7) {
+  color: #070707;
   font-weight: bold;
-  color: #D14343;
 }
 
 .input-box {
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
-.meal-select {
+#meal-select {
   width: 80px;
-  height: 30px;
   margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 30px;
   font-size: 14px;
 }
 
-.food-input,
-.calorie-input {
+.input-box input[type="text"],
+.input-box input[type="number"] {
   flex: 1;
-  height: 30px;
   margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 30px;
   font-size: 14px;
-  padding: 0 10px;
+  padding: 5px;
 }
 
-.food-input::placeholder,
-.calorie-input::placeholder {
-  font-size: 14px;
-}
-
-.add-btn {
+.input-box button {
   width: 50px;
   height: 30px;
-  border: none;
   background-color: #0D518D;
   color: #fff;
+  border: none;
+  border-radius: 5px;
   font-size: 14px;
   cursor: pointer;
 }
 
 .meal-box {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .meal-box table {
   width: 100%;
   border-collapse: collapse;
-  text-align: center;
 }
 
 .meal-box td {
-  border: 1px solid #DFE2E6;
   padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
