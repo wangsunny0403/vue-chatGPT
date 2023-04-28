@@ -1,9 +1,4 @@
-<script setup>
-
-</script>
-
+<script setup></script>
 <template>
-  <main>
-    test
-  </main>
+  <main>test</main>
 </template>
