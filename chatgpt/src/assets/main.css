@@ -1,1 +1,260 @@
 @import './base.css';
+
+body {
+  background-color: #F0F4F5;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-box {
+  height: 80px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.logo {
+  width: 50px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.content-box {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.section {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 2px 2px #E5E8EA;
+}
+
+.section+.section {
+  margin-left: 10px;
+}
+
+.section1 {
+  background-color: #ffffff;
+}
+
+.user-box {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.user-head {
+  display: flex;
+  align-items: center;
+}
+
+.user-head img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-size: 24px;
+}
+
+.user-body {
+  margin-top: 20px;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.user-body li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.user-body li span:first-child {
+  font-weight: bold;
+}
+
+.info-txt {
+  margin-top: 20px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.info-txt .title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #0D518D;
+}
+
+.info-txt .content {
+  font-size: 14px;
+  color: #070707;
+  line-height: 1.5;
+}
+
+.section2 {
+  background-color: #ffffff;
+}
+
+
+
+.bmr-info {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.bmr-info h2 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #0D518D;
+}
+
+.bmr-info p {
+  color: #070707;
+}
+
+.bmr-box {
+  margin-top: 30px;
+}
+
+.bmr-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  border-bottom: 1px solid #DFE2E6;
+}
+
+.bmr-img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.bmr-txt {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.bmr-count {
+  font-size: 14px;
+  margin: 8px 0;
+  color: #070707;
+}
+
+
+.section3 {
+  background-color: #ffffff;
+}
+
+.count-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.count-box h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0D518D;
+}
+
+.count-box table {
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.count-box th {
+  font-size: 14px;
+  font-weight: normal;
+  color: #070707;
+  padding: 8px;
+  text-align: left;
+}
+
+.count-box td {
+  font-size: 14px;
+  font-weight: normal;
+  color: #070707;
+  padding: 8px;
+  text-align: center;
+}
+
+.count-box td:first-child {
+  font-weight: bold;
+}
+
+.count-box td:nth-child(2),
+.count-box td:nth-child(4),
+.count-box td:nth-child(6) {
+  font-weight: bold;
+  color: #0D518D;
+}
+
+.count-box td:nth-child(7) {
+  font-weight: bold;
+  color: #D14343;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.meal-select {
+  width: 80px;
+  height: 30px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.food-input,
+.calorie-input {
+  flex: 1;
+  height: 30px;
+  margin-right: 10px;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.food-input::placeholder,
+.calorie-input::placeholder {
+  font-size: 14px;
+}
+
+.add-btn {
+  width: 50px;
+  height: 30px;
+  border: none;
+  background-color: #0D518D;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.meal-box {
+  margin-top: 30px;
+}
+
+.meal-box table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.meal-box td {
+  border: 1px solid #DFE2E6;
+  padding: 10px;
+}
